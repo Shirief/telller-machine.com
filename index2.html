@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teller Machine</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-app="angular">
+
+	<img class="mb-4" src="download.jpg" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">BoarHat Bank</h1>
+    <div ng-controller = "Bank">
+	Enter your Balance : <input type="text" ng-model="balance">
+	<br>
+	Enter your Withdraw amount: <input type = "text" ng-model="num2">
+	<input type="button" ng-model="add" ng-click="add(balance,num2)" value="Enter">
+	<br>
+	{{ txtsum }} {{ sum }}
+</div>
+
+	<script src ="Javascript/model.js"></script>
+	<script src = "Javascript/controllerjs/controller.js"></script>
+</body>
+</html>
